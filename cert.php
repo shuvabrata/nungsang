@@ -123,6 +123,7 @@ if ($runProperties == false)
 }
 
 $distance = $runProperties["distance"];
+$certBgImage = $runProperties["cert_bg_image"];
 
 //Get the line from the results file.
 $runner_array = GetResultLine($runName, $bibNo);
@@ -143,11 +144,13 @@ $runner->categoryRank=38;
 $runner->genderRank = 40;
 
 
+
+
 $pdf = new PDF();	
 $pdf->AliasNbPages();
 $pdf->AddPage("P", "A4");
 //Set the bg image.
-$bgImageFile = $GLOBALS['RESULTS_DIR'].$runName."/bg.jpg";
+$bgImageFile = $GLOBALS['RESULTS_DIR'].$runName."/".$certBgImage;
 $pdf->centreImage($bgImageFile);
 
 $pdf->Ln(110);
