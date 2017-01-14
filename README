@@ -1,10 +1,18 @@
-Description
+===========
+DECRIPTION
+===========
+Nungsang is a light weight PHP based program that can generate HTML results and Certificates for running events. It can be used for hosting several run results.
 
 
-Requirements
+============
+REQUIREMENTS
+============
 Any web server install supporting PHP. Apache with PHP on Ubuntu was used for testing.
 
-How to Install
+
+==============
+HOW TO INSTALL
+==============
 1. Copy the entire repo into any directory inside your DocumentRoot. Exmaple: /var/www/html/.
 2. You will have the following directory structure:
 
@@ -38,7 +46,9 @@ nungsang/
         └── timing.csv
 
 
-Test the install
+================
+TEST THE INSTALL
+================
 1. Run the following commands
 
 ubuntu@ubuntu:/var/www/html/nungsang$ php -f generateHtml.php run=samplerun
@@ -52,7 +62,9 @@ In my case its http://localhost/nungsang/results/samplerun/run_1.html
 
 4. Click on the certificate link to check that certificate generation is working fine. It should open a page with a PDF document.
 
-How to add a new run?
+=======================
+HOW TO ADD A NEW RUN?
+=======================
 1. Create a CSV file in the format as you see in the sample folder.
 2. Create a new directory under the "result/" folder. Lets call it "results/myrun/". Place your CSV file as timing.csv into this folder.
 3. Copy the results/samplerun/properties.ini into results/myrun/properties.ini
@@ -74,12 +86,15 @@ In my case its http://localhost/nungsang/results/myrun/run_1.html
 11. Note that only 500 entries are generated per HTML pages. Click on the link on the top of page to go to next page.
 
 
-
-How to change HTML page look?
+==============================
+HOW TO CHANGE HTML PAGE LOOK?
+==============================
 Edit the file html_template.html to customize the HTML page. Take a backup.Dont replace the "$" characters in that file. Dont add any "$" characters in that file. The "$" will be replaced by your content. 
 
 
-How to customize the certificate?
+=================================
+HOW TO CUSTOMIZE THE CERTIFICATE?
+=================================
 Create a A4 size image (2480 x 3508 pixels) with web-quality resolution (for small size) and replace results/myrun/bg.jpg with it.
 
 If you want to change the Text content of the certficate, edit the file cert.php. Do it only if you know PHP. Its simple.
