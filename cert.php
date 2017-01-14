@@ -150,13 +150,13 @@ $pdf->AddPage("P", "A4");
 $bgImageFile = $GLOBALS['RESULTS_DIR'].$runName."/bg.jpg";
 $pdf->centreImage($bgImageFile);
 
-$pdf->Ln(60);
+$pdf->Ln(110);
 
 $pdf->SetFont('Helvetica','B',24);
 $pdf->SetTextColor(0,200,0);
 $pdf->Ln(10);
 
-$pdf->SetFont('Times','',12);
+$pdf->SetFont('Times','B',12);
 $pdf->SetTextColor(0,0,0);
 $pdf->Cell(0, 10, "THIS IS TO CERTIFIY THAT", 0, 1, 'C');
 $pdf->Cell(0, 10, "NAME: ".$runner->name, 0, 1, 'C');
