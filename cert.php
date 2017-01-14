@@ -170,8 +170,6 @@ $pdf->Cell(0, 10, "AND FINISHED WITH A TIMING OF ".$runner->time, 0, 1, 'C');
 $pdf->Cell(0, 10, "(HH:MM:SS.SS)", 0, 1, 'C');
 $pdf->Ln(40);
 
-$pdf->Cell(0, 5, "Race Director", 0, 1, 'C');
-$pdf->Cell(0, 5, "Shuva Brata Deb", 0, 1, 'C');
 
 $pdf->Output();
 ?>
