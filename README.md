@@ -7,6 +7,7 @@ Any web server install supporting PHP. Apache with PHP on Ubuntu was used for te
 How to Install
 1. Copy the entire repo into any directory inside your DocumentRoot. Exmaple: /var/www/html/.
 2. You will have the following directory structure:
+<<<<<<< HEAD
 
 ubuntu@ubuntu:/var/www/html$ tree nungsang/
 nungsang/
@@ -61,3 +62,5 @@ How to change HTML page look?
 
 
 How to customize the certificate?
+=======
+>>>>>>> 3e021501548dd483ceefd8105843b3d30940fc4b
