@@ -65,7 +65,7 @@ In my case its http://localhost/nungsang/results/samplerun/run_1.html
 =======================
 HOW TO ADD A NEW RUN?
 =======================
-1. Create a CSV file in the format as you see in the sample folder.
+1. Create a CSV file in the format as you see in the sample folder. MAKE SURE THE CSV FILE HAS UNIX LINE ENDING. IF NOT USE dos2unix COMMAND TO CHANGE LINE ENDING.
 2. Create a new directory under the "result/" folder. Lets call it "results/myrun/". Place your CSV file as timing.csv into this folder.
 3. Copy the results/samplerun/properties.ini into results/myrun/properties.ini
 4. Copy the results/samplerun/bg.jpg into results/myrun/bg.jpg
@@ -84,6 +84,13 @@ In my case its http://localhost/nungsang/results/myrun/run_1.html
 10. Click on the certificate link to check that certificate generation is working fine. It should open a page with a PDF document.
 
 11. Note that only 500 entries are generated per HTML pages. Click on the link on the top of page to go to next page.
+
+
+===================================
+HOW TO REMOVE A RUN FOR MY WEBSITE
+===================================
+Delete the run folder. In our example remove "results/myrun" folder. Thats it.
+
 
 
 ==============================
